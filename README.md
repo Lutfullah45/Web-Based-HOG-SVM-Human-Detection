@@ -26,6 +26,27 @@ Depo (Repository) aşağıdaki modüler yapıya sahiptir:
 Projeyi kendi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
 
 **1. Depoyu Klonlayın:**
-```bash
-git clone [https://github.com/Lutfullah45/Web-Based-HOG-SVM-Human-Detection.git](https://github.com/Lutfullah45/Web-Based-HOG-SVM-Human-Detection.git)
-cd Web-Based-HOG-SVM-Human-Detection
+    git clone https://github.com/Lutfullah45/Web-Based-HOG-SVM-Human-Detection.git
+    cd Web-Based-HOG-SVM-Human-Detection
+
+**2. Gerekli Kütüphaneleri Yükleyin:**
+Python yüklü olduğundan emin olduktan sonra terminalde şu komutu çalıştırın:
+    pip install fastapi uvicorn opencv-python scikit-learn numpy imageio
+
+**3. API Sunucusunu Ayağa Kaldırın:**
+FastAPI sunucusunu başlatmak için ana dizinde şu komutu çalıştırın:
+    uvicorn app.api_sunucu:app --reload
+
+Sunucu başarıyla başladığında terminalde "Uvicorn running on http://127.0.0.1:8000" mesajını göreceksiniz.
+
+**4. Arayüzü Açın:**
+Dosya gezgininden `Webui` klasörünün içindeki `index.html` dosyasına çift tıklayarak tarayıcınızda açın. Sisteme bir fotoğraf yükleyip tespit sürecini doğrudan test edebilirsiniz!
+
+## 💻 Kullanılan Teknolojiler
+* **Makine Öğrenmesi & Görüntü İşleme:** OpenCV, Scikit-Learn, Numpy
+* **Arka Yüz (Backend):** Python, FastAPI, Uvicorn
+* **Ön Yüz (Frontend):** HTML5, Vanilla JavaScript, Canvas API
+
+---
+**Geliştirici:** Lütfullah Dinçer  
+*Bilecik Şeyh Edebali Üniversitesi - Bilgisayar Mühendisliği Bitirme Tasarım Projesi*
