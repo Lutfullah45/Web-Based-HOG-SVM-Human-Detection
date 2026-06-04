@@ -1,0 +1,23 @@
+{
+  "pos_dir": "C:\\Users\\Lütfullah\\OneDrive\\Desktop\\HOG+SVM_PROJESI\\baseline_work\\prepared\\pos",
+  "neg_dir": "C:\\Users\\Lütfullah\\OneDrive\\Desktop\\HOG+SVM_PROJESI\\baseline_work\\prepared\\neg",
+  "n_pos": 1237,
+  "n_neg": 6131,
+  "hog": {
+    "win_w": 64,
+    "win_h": 128,
+    "cell": 8,
+    "block_cells": 2,
+    "nbins": 9
+  },
+  "svm": {
+    "C_best": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 20000
+  },
+  "val": {
+    "f1_best": 0.876984126984127,
+    "test_size": 0.2,
+    "seed": 42
+  }
+}

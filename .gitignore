@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.env
+# Eğer veri setin (INRIA vb.) klasör içindeyse onun adını da yaz, örneğin:
+data/
